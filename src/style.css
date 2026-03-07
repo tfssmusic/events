@@ -1,0 +1,63 @@
+@font-face {
+        font-family: "Berlinerins";
+        src: url("assets/TTBerlinerins.otf") format("opentype"), local("TT Berlinerins Trial");
+}
+
+#pageone {
+	height:100vh;
+	width:50%;
+	display:flex;
+	flex-direction:column;
+}
+
+#pagetwo {
+	height:100vh;
+	margin:10px;
+	width:50%;
+}
+
+.mainimg {
+	width:100%;
+	height:70%;
+	background-color:#000;
+	background-image: url();
+}
+
+.panel {
+	width:100%;
+	height:30vh;
+	background-color:#FFF;
+}
+
+.divot {
+	background: linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0) 10%);
+	position:absolute;
+	top: 0;
+	width: 50%;
+	height: 100vh;
+}
+
+.flip {
+	transform: rotate(180deg);
+}
+
+html {
+
+}
+
+h2 {
+	font-size:4.5rem;
+	font-family: "Bebas Neue";
+	font-weight:200;
+	color:#FFF;
+	line-height:1rem;
+	padding-left:1vw;
+}
+
+body {
+	display:flex;
+	overflow:hidden;
+	flex-direction:row;
+	margin:0;
+	background-color:#fcba03;
+}

@@ -1,6 +1,8 @@
 ---
-title: My Eleventy Portfolio
-layout: layout.njk
+title: Test Test Test
+layout: base.njk
+date: 
+image:
 ---
 
 # Welcome to my Awesome Website
