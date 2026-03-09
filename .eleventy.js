@@ -1,6 +1,6 @@
 export default async function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("style.css");
-  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("src/style.css");
+  eleventyConfig.addPassthroughCopy("src/assets");
 
   return {
     dir: {
