@@ -5,6 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "eleventy --serve"
+    "build": "NODE_ENV=production eleventy --pathprefix 'events'"
   },
   "repository": {
     "type": "git",
