@@ -12,7 +12,6 @@
 
 #pagetwo {
 	height:100vh;
-	margin:10px;
 	width:50%;
 }
 
@@ -29,6 +28,13 @@
 	background-color:#FFF;
 }
 
+.mainbody {
+	width:(50vw - 2vh);
+	height:98vh;
+	margin:1vh;
+	background-color:#DDD;
+}
+
 .divot {
 	background: linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0) 10%);
 	position:absolute;
@@ -39,6 +45,12 @@
 
 .flip {
 	transform: rotate(180deg);
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
 }
 
 html {
