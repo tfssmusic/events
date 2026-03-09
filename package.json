@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
     "build": "NODE_ENV=production eleventy --pathprefix 'events'"
   },
   "repository": {
