@@ -14,49 +14,55 @@
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div id="pageone">
-			<div class="mainimg">
-				<h2>Turner</h2>
-				<h2>Fenton</h2>
-				<h2>Music</h2>
+		<div class="mbody">
+			<div class="flipper">
+				<div id="pageone">
+					<div class="mainimg">
+						<h2>Turner</h2>
+						<h2>Fenton</h2>
+						<h2>Music</h2>
+					</div>
+					<div class="panel">
+						<h1>{{ title }}</h1>
+						<div class="info" style="left:2%; position:relative;">
+							<div><strong>&nbsp;Date:</strong> {{ date | readableDate }} <br> <strong>&nbsp;Time:</strong> {{ time }} </div>
+							<div><strong>&nbsp;Location:</strong> {{ location }} <br> <strong>&nbsp;Price:</strong> {{ price }}</div>
+						</div>
+						{% include "footer.njk" %}
+					</div>
+					<div class="divot"></div>
+				</div>
 			</div>
-			<div class="panel">
-				<h1>{{ title }}</h1>
-				<div class="info" style="left:2%; position:relative;">
-					<div><strong>&nbsp;Date:</strong> {{ date | readableDate }} <br> <strong>&nbsp;Time:</strong> {{ time }} </div>
-					<div><strong>&nbsp;Location:</strong> {{ location }} <br> <strong>&nbsp;Price:</strong> {{ price }}</div>
+			<div id="pagetwo">
+				<div class="mainbody">
+					<div class="programmeheading">
+						<p>&emsp;CONCERT PROGRAMME&emsp;</p>
+					</div>
+					<div class="line">
+						<svg viewBox="0 0 100 2" xmlns="http://www.w3.org/2000/svg">
+							<line x1="0" y1="0" x2="100" y2="0" stroke="black" stroke-width="1.5" />
+							<line x1="0" y1="1.5" x2="100" y2="1.5" stroke="black" stroke-width="0.25" />
+						</svg>
+					</div>
+					<h1><strong>About {{ title }}</strong></h1>
+					<div style="height:40vh; width:80%; margin-left:10%">
+						<p> {{ parts[0] | safe }} </p>
+						<img src="fuck">
+					</div>
+					<div class="line">
+						<svg viewBox="0 0 100 2" xmlns="http://www.w3.org/2000/svg">
+							<line x1="0" y1="0" x2="100" y2="0" stroke="black" stroke-width="1.5" />
+							<line x1="0" y1="1.5" x2="100" y2="1.5" stroke="black" stroke-width="0.25" />
+						</svg>
+					</div>
+					<h1><strong>Features</strong></h1>
+					<div class="features">
+						{{ parts[1] | safe }}
+					</div>
+					{% include "footer.njk" %}
 				</div>
-				{% include "footer.njk" %}
+				<div class="divot flip"></div>
 			</div>
-			<div class="divot"></div>
-		</div>
-		<div id="pagetwo">
-			<div class="mainbody">
-				<div style="font-family:'Playfair Display', serif; margin-top:10px;position:relative;height:1.6rem;font-size:1.2rem; width: 25vw; text-align:center;left:12vw; border:solid black; border-width:1px;"><strong>CONCERT PROGRAMME</strong></div>
-				<div class="line">
-					<svg viewBox="0 0 100 2" xmlns="http://www.w3.org/2000/svg">
-						<line x1="0" y1="0" x2="100" y2="0" stroke="black" stroke-width="1.5" />
-						<line x1="0" y1="1.5" x2="100" y2="1.5" stroke="black" stroke-width="0.25" />
-					</svg>
-				</div>
-				<h1><strong>About {{ title }}</strong></h1>
-				<div style="height:40vh; width:80%; margin-left:10%">
-					<p> {{ parts[0] | safe }} </p>
-					<img src="fuck">
-				</div>
-				<div class="line">
-					<svg viewBox="0 0 100 2" xmlns="http://www.w3.org/2000/svg">
-						<line x1="0" y1="0" x2="100" y2="0" stroke="black" stroke-width="1.5" />
-						<line x1="0" y1="1.5" x2="100" y2="1.5" stroke="black" stroke-width="0.25" />
-					</svg>
-				</div>
-				<h1><strong>Features</strong></h1>
-				<div class="features">
-					{{ parts[1] | safe }}
-				</div>
-				{% include "footer.njk" %}
-			</div>
-			<div class="divot flip"></div>
 		</div>
 	</body>
 </html>	
