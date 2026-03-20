@@ -1,0 +1,164 @@
+@font-face {
+        font-family: "Berlinerins";
+        src: url("assets/TTBerlinerins.otf") format("opentype"), local("TT Berlinerins Trial");
+}
+
+
+
+#pageone {
+	height:100vh;
+	width:50%;
+	display:flex;
+	flex-direction:column;
+}
+
+#pagetwo {
+	height:100vh;
+	width:50%;
+}
+
+.mainimg {
+	width:100%;
+	height:70%;
+	background-color:#000;
+	background-image: url();
+}
+
+.panel {
+	width:100%;
+	height:30vh;
+	background-color:#FFF;
+}
+
+.panel h1 {
+	position:relative;
+	left: 1vw;
+	top: 3vh;
+	font-family: "Roboto Condensed";
+	font-weight: 700;
+	text-align: left;
+	color: #555;
+}
+
+.info {
+	display:flex;
+	flex-direction:row;
+}
+
+.info div {
+	font-family:"Raleway", sans-serif;
+	font-size:2.5vh;
+	line-height: 8vh;
+	width:45%;
+	border: dotted #555;
+	border-width: 1px;
+	margin-right:2%;
+	margin-top:2%;
+}
+
+.mainbody {
+	width:calc(50vw - 2vh);
+	height:98vh;
+	margin:1vh;
+	background-color:#DDD;
+	position:absolute;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
+.mainbody p {
+	font-size:2vh;
+	font-size:1vw;
+	max-height:22vh;
+	margin:0;
+	font-family: "Playfair Display", Times, serif;
+	color: #222;
+	column-count: 2;
+}
+
+.mainbody img {
+	transform: translateY(3vh);
+	object-fit: cover;
+	width: 100%;
+	height: 18vh;
+	margin-bottom:1vh;
+}
+
+.features {
+	height:40vh;
+	width:80%;
+	margin-left:10%;
+}
+
+.features p{
+	text-align:center;
+	column-count:1;
+	width:100%;
+}
+
+.divot {
+	background: linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0) 10%);
+	position:absolute;
+	top: 0;
+	width: 50%;
+	height: 100vh;
+}
+
+.flip {
+	transform: rotate(180deg);
+}
+
+.line {
+	position:relative;
+	width:80%;
+	height:3vh;
+	margin-left:10%;
+	margin-top:4vh;
+}
+
+footer {
+	width:50%;
+	height:3vh;
+	position: fixed;
+	bottom: 2vh;
+	font-family:"Onest", sans-serif;
+}
+
+footer svg {
+	bottom: 0.5vh;
+	position:absolute;
+}
+
+html {
+
+}
+
+h1 {
+	font-family: "Abril Fatface", serif;
+	font-weight:600;
+	color: #000;
+	margin:0;
+	text-align:center;
+	width:100%;
+	text-transform: uppercase;
+	transform: translateY(-1.5vh);
+}
+
+h2 {
+	font-size:4.5rem;
+	font-family: "Bebas Neue";
+	font-weight:200;
+	color:#FFF;
+	line-height:1rem;
+	padding-left:1vw;
+}
+
+
+body {
+	display:flex;
+	overflow:hidden;
+	flex-direction:row;
+	margin:0;
+	background-color:#fcba03;
+}

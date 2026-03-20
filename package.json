@@ -1,0 +1,26 @@
+{
+  "name": "events",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "NODE_ENV=production eleventy --pathprefix 'events'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tfssmusic/events.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/tfssmusic/events/issues"
+  },
+  "homepage": "https://github.com/tfssmusic/events#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "eleventy": "^2.0.1"
+  }
+}
