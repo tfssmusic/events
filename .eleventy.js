@@ -2,7 +2,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/styletba.css");
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/assets/js");
+  eleventyConfig.addPassthroughCopy("src/assets/js/pages.js");
 
   // Add split filter
   eleventyConfig.addFilter("split", function(str, separator) {
