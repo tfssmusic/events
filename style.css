@@ -337,3 +337,37 @@ body {
 	justify-content:center;
 	background-color:transparent;
 }
+
+@media only screen and (max-width:925px){
+	.js1 {
+
+	}
+	.flipper {
+		width:80vw;
+	}
+	.rightflipper {
+		width:80vw;
+		margin-left:0vw;
+	}
+	#cover {
+		width:80vw;
+	}
+	#pageone {
+		width:80vw;
+	}
+	#pagetwo {
+		width:80vw;
+	}
+	#pagethree {
+		width:80vw;
+	}
+	#pagefour {
+		width:80vw;
+	}
+	.mainbody {
+		width:calc(100% - 2vh)
+	}
+	.divot {
+		width:80vw;
+	}
+}

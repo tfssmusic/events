@@ -12,37 +12,85 @@ const pglist = [pg0, pg1, pg2, pg3, pg4];
 let pgcount = 0;
 
 function arrowupdater() {
-	if (pgcount == 0) {
-		la.style.display=`none`;
-		ra.style.display=`block`;
-	} else if (pgcount == 2) {
-		ra.style.display=`none`;
-		la.style.display=`block`;
+	if (window.innerWidth >= 925) {
+		if (pgcount == 0) {
+			la.style.display=`none`;
+			ra.style.display=`block`;
+		} else if (pgcount == 2) {
+			ra.style.display=`none`;
+			la.style.display=`block`;
+		} else {
+			ra.style.display=`block`;
+			la.style.display=`block`;
+		}
 	} else {
-		ra.style.display=`block`;
-		la.style.display=`block`;
+		if (pgcount == 0) {
+			la.style.display=`none`;
+			ra.style.display=`block`;
+		} else if (pgcount == 4) {
+			ra.style.display=`none`;
+			la.style.display=`block`;
+		} else {
+			ra.style.display=`block`;
+			la.style.display=`block`;
+		}
+		
 	}
 }
 
 function pageupdater() {
-	if (pgcount == 0) {
-		for (const el of pglist) {
-			console.log(el);
-			el.style.display=`none`;
+	if (window.innerWidth >= 925) {
+		if (pgcount == 0) {
+			for (const el of pglist) {
+				console.log(el);
+				el.style.display=`none`;
+			}
+			pg0.style.display=`flex`;
+		} else if (pgcount == 1) {
+			for (const el of pglist) {
+				el.style.display=`none`;
+			}
+			pg1.style.display=`flex`;
+			pg2.style.display=`flex`;
+		} else if (pgcount == 2) {
+			for (const el of pglist) {
+				el.style.display=`none`;
+			}
+			pg3.style.display=`flex`;
+			pg4.style.display=`flex`;
 		}
-		pg0.style.display=`flex`;
-	} else if (pgcount == 1) {
-		for (const el of pglist) {
-			el.style.display=`none`;
+	} else {
+		if (pgcount == 0) {
+			for (const el of pglist) {
+				console.log(el);
+				el.style.display=`none`;
+			}
+			pg0.style.display=`flex`;
+		} else if (pgcount == 1) {
+			for (const el of pglist) {
+				console.log(el);
+				el.style.display=`none`;
+			}
+			pg1.style.display=`flex`;
+		} else if (pgcount == 2) {
+			for (const el of pglist) {
+				console.log(el);
+				el.style.display=`none`;
+			}
+			pg2.style.display=`flex`;
+		} else if (pgcount == 3) {
+			for (const el of pglist) {
+				console.log(el);
+				el.style.display=`none`;
+			}
+			pg3.style.display=`flex`;
+		} else if (pgcount == 4) {
+			for (const el of pglist) {
+				console.log(el);
+				el.style.display=`none`;
+			}
+			pg4.style.display=`flex`;
 		}
-		pg1.style.display=`flex`;
-		pg2.style.display=`flex`;
-	} else if (pgcount == 2) {
-		for (const el of pglist) {
-			el.style.display=`none`;
-		}
-		pg3.style.display=`flex`;
-		pg4.style.display=`flex`;
 	}
 }
 
