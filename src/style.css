@@ -151,7 +151,7 @@
 .mainbody p {
 	font-size:2vh;
 	font-size:1vw;
-	max-height:22vh;
+	max-height:30vh;
 	margin:0;
 	font-family: "Playfair Display", "Cormorant Garamond", Times, serif;
 	color: #222;
@@ -339,6 +339,20 @@ body {
 }
 
 @media only screen and (max-width:925px){
+
+	.info div {
+		line-height:2vh;
+		font-size: 1.30vh;
+	}
+
+	.mainbody p {
+		font-size: 1.2vh;
+	}
+
+	.performances p {
+		font-size: 1vh;
+	}
+		
 	.js1 {
 
 	}
